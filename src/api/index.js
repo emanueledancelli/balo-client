@@ -1,9 +1,9 @@
 import axios from "axios";
 
-// old api URL
+// original api URL
 //axios.defaults.baseURL = "https://api.balotta.co/wp-json/wp/v2";
 
-// mockdata api url
+// mockdata api URL
 axios.defaults.baseURL = "https://60b257c862ab150017ae1fdc.mockapi.io/api/v1/";
 
 export const getAllEvents = () => axios.get("/balo-events");
