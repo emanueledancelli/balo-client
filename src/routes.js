@@ -6,15 +6,9 @@ import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import NavBar from "components/NavBar";
 import withErrorBoundary from "./hoc/withErrorBoundary";
-/* 
-const Home = Loadable({
-  loader: () => import("views/Home"),
-  loading: Loader
-});
- */
 
 const Home = Loadable({
-  loader: () => import("components/LookingForEvents"),
+  loader: () => import("views/Home"),
   loading: Loader
 });
 
@@ -64,13 +58,15 @@ class App extends Component {
       <Route
         render={({ location }) => (
           <div className="App">
+            {console.log(location)}
             <Header location={location} />
-            {/* <NavBar /> */}
+            <NavBar />
             {Routes(location)}
-            {location.pathname.startsWith("/") ||
-            location.pathname.startsWith("/eventi") ? null : (
+            {location.pathname.endsWith("/") ||
+            location.pathname.endsWith("/home") ||
+            location.pathname.endsWith("/favorite") ? (
               <Navigation location={location} />
-            )}
+            ) : null}
           </div>
         )}
       />

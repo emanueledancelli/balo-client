@@ -1,14 +1,17 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "https://api.balotta.co/wp-json/wp/v2";
+// old api URL
+//axios.defaults.baseURL = "https://api.balotta.co/wp-json/wp/v2";
 
-export const getAllEvents = () =>
-  axios.get("/events?categories=1&per_page=100");
+// mockdata api url
+axios.defaults.baseURL = "https://60b257c862ab150017ae1fdc.mockapi.io/api/v1/";
 
-export const getSingleEvent = id => axios.get(`/events/${id}`);
+export const getAllEvents = () => axios.get("/balo-events");
 
-export const getAllPlaces = () => axios.get("/place");
+export const getSingleEvent = id => axios.get(`/balo-events/${id}`);
 
-export const getSinglePlace = id => axios.get(`/place/${id}`);
+export const getAllPlaces = () => axios.get("/balo-places");
+
+export const getSinglePlace = id => axios.get(`/balo-places/${id}`);
 
 export const getFavEvents = ids => axios.all(ids.map(e => getSingleEvent(e)));
