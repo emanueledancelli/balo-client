@@ -5,7 +5,7 @@ import MetaTags from "components/MetaTags";
 import SingleList from "./components/singleList";
 
 const tags = {
-  title: "Home - Balotta",
+  title: "Home - Balo",
   description: "Scopri i migliori eventi della settimana"
 };
 
