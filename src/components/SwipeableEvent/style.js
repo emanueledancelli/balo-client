@@ -5,7 +5,7 @@ import { mq } from "styles";
  */
 
 const Absolute = styled.div`
-  width: 100%;
+  width: 100vw;
   position: absolute;
   box-sizing: border-box;
   ${mq[2]} {

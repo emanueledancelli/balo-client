@@ -20,10 +20,10 @@ const Container = styled.div`
 
 const Title = styled.h1`
   color: #222;
-  margin-bottom: -3vh;
   padding-left: 3%;
-  font-size: 2em;
+  letter-spacing: -1px;
 `;
+
 const SquareContainer = styled.div`
   padding-left: 3%;
   margin-top: 25px;

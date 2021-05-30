@@ -41,7 +41,7 @@ class Home extends React.Component {
         <MetaTags {...tags} />
 
         <Hero>
-          <Title active>Events</Title>
+          <Title active>Upcoming events</Title>
         </Hero>
 
         {today && today.length > 0 && (

@@ -18,9 +18,10 @@ import {
 } from "react-share";
 
 const Sharer = ({ handleClick, id, title }) => {
-  const shareUrl = `https://balotta.co/shared/single/${id}`;
+  const shareUrl = `https://balo.co/shared/single/${id}`;
+  /*
   const iw = window.innerWidth;
-
+  
   if (iw > 940) {
     return (
       <div>
@@ -49,7 +50,7 @@ const Sharer = ({ handleClick, id, title }) => {
         </EmailShareButton>
       </div>
     );
-  }
+  } */
   return (
     <ShareWrapper>
       <Shadow onClick={handleClick} />

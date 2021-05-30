@@ -214,17 +214,7 @@ class Hero extends React.Component {
                     borderRadius: "50%"
                   }}
                   onClick={this.handleShareButton}
-                >
-                  {isShareOpen ? (
-                    <Sharer
-                      title={title}
-                      id={this.props.id}
-                      handleClick={this.handleShadowAction}
-                    />
-                  ) : (
-                    <ShareVariantIcon size={28} />
-                  )}
-                </Flex>
+                ></Flex>
               ) : (
                 <Flex
                   justify="center"

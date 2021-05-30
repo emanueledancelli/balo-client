@@ -21,7 +21,7 @@ const scrollingListItem = ({
     >
       <HorizontalContainer>
         <Image thumb={thumbnail} medium={medium}>
-          {hasTags && <Tag>{tags[0] || null}</Tag>}
+          {hasTags && <Tag>{tags || null}</Tag>}
         </Image>
         <CardTitle dangerouslySetInnerHTML={{ __html: title }} />
       </HorizontalContainer>
